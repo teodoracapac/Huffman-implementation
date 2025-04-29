@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta content=" text/html;charset=utf -8" http-equiv="Content-Type">
+	<meta content ="utf-8"http-equiv="encoding">
+	<!-- load the style.css -->	
+	<link rel="stylesheet" href="style.css">
+	<!-- load the d3.js library -->	
+	<script src="https://d3js.org/d3.v5.min.js"></script>
+ </head >
+ 
+ <body>
+	<h1>Huffman Coding Tree Generator</h1>
+	<p>Enter a string below to generate a Huffman coding tree:</p>
+	<input class="message" placeholder="String pentru compresie">
+	<div class="output-empty" v-if="message == ''">Arborele de compresie</div>
+
+
+	<!-- arbore.js  - a function to display a tree 
+					- is based on "collapsible tree" sample from d3 library 
+	-->
+	<script src="Huffman.js"></script>
+	<div class="output-empty">Coduri noi:</div>
+ </body>
+</html>
